@@ -28,7 +28,7 @@ export const SERVICES = [
     shortDesc: "Complete rooftop solar installation with net metering, battery backup options, and 25-year performance warranty.",
     fullDesc: "Switch your home to clean solar power with zero hassle. Our team handles everything from roof inspection and government subsidy paperwork to fast 1–2 day installation and net-meter connection.",
     specs: ["3 kW to 15 kW Home Systems", "Up to 90% Monthly Bill Savings", "Subsidy & Net Metering Support", "25-Year Panel Warranty"],
-    image: "/images/solar-panels-sky.jpg",
+    image: "./images/solar-panels-sky.jpg",
     badge: "Most Popular"
   },
   {
@@ -38,7 +38,7 @@ export const SERVICES = [
     shortDesc: "High-efficiency solar systems for offices, showrooms, schools, and hospitals with 3–4 year payback.",
     fullDesc: "Protect your business from rising commercial electricity tariffs. Our commercial rooftop solar installations deliver immediate monthly savings, tax depreciation benefits, and reliable daytime power.",
     specs: ["20 kW to 500 kW Capacity", "3–4 Year Investment Payback", "Tax & Depreciation Benefits", "Zero Maintenance Hassle"],
-    image: "/images/solar-rooftop-factory.jpg",
+    image: "./images/solar-rooftop-factory.jpg",
     badge: "Best ROI"
   },
   {
@@ -48,7 +48,7 @@ export const SERVICES = [
     shortDesc: "Large-scale rooftop and ground-mounted solar plants designed to power heavy industrial machinery reliably.",
     fullDesc: "Reduce factory operating expenses significantly with custom-engineered industrial solar plants. Built with durable Tier-1 solar panels and remote performance monitoring.",
     specs: ["500 kW to 10 MW+ Plants", "Designed for Heavy Loads", "Remote Mobile Monitoring", "25-Year Output Guarantee"],
-    image: "/images/solar-aerial-farm.jpg",
+    image: "./images/solar-aerial-farm.jpg",
     badge: "Industrial"
   },
   {
@@ -58,7 +58,7 @@ export const SERVICES = [
     shortDesc: "Scheduled panel cleaning, inverter health checkups, and fast fault repair so you never lose power savings.",
     fullDesc: "Dust and loose wiring can drop your solar output by 20%. Our maintenance team inspects, cleans, and optimizes your solar system so it generates maximum electricity year-round.",
     specs: ["Scheduled Panel Cleaning", "Inverter & Wiring Checkup", "Performance Optimization", "Fast On-Site Support"],
-    image: "/images/solar-field-landscape.jpg",
+    image: "./images/solar-field-landscape.jpg",
     badge: "24/7 Support"
   }
 ];
@@ -71,7 +71,7 @@ export const PROJECTS = [
     location: "Industrial Logistics Hub",
     capacity: "850 kW System",
     savings: "Saves ~₹10,50,000 / month",
-    image: "/images/solar-rooftop-factory.jpg",
+    image: "./images/solar-rooftop-factory.jpg",
     desc: "Complete rooftop solar installation powering cold storage and warehouse operations with 3.5-year payback."
   },
   {
@@ -81,7 +81,7 @@ export const PROJECTS = [
     location: "Suburban Residential Estate",
     capacity: "10 kW System",
     savings: "92% Electricity Bill Cut",
-    image: "/images/solar-panels-sky.jpg",
+    image: "./images/solar-panels-sky.jpg",
     desc: "Clean, weather-resistant rooftop solar panels paired with net metering for near-zero monthly power bills."
   },
   {
@@ -91,7 +91,7 @@ export const PROJECTS = [
     location: "Agri-Tech Park",
     capacity: "2.4 MW System",
     savings: "Powers 100% Daytime Load",
-    image: "/images/solar-field-landscape.jpg",
+    image: "./images/solar-field-landscape.jpg",
     desc: "Ground-mounted solar array built on open land to supply uninterrupted clean power to processing units."
   },
   {
@@ -101,7 +101,7 @@ export const PROJECTS = [
     location: "Manufacturing Corridor",
     capacity: "1.5 MW Hybrid",
     savings: "24/7 Uninterrupted Power",
-    image: "/images/solar-wind-hybrid.jpg",
+    image: "./images/solar-wind-hybrid.jpg",
     desc: "High-reliability renewable setup ensuring zero factory downtime even during grid fluctuations."
   }
 ];

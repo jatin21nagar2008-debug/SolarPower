@@ -7,7 +7,7 @@ export default function Hero({ onOpenQuote }) {
   const [activeCallout, setActiveCallout] = useState(null);
 
   return (
-    <section id="hero" className="relative min-h-screen pt-28 pb-16 overflow-hidden bg-navy-950 flex flex-col justify-between">
+    <section id="hero" className="relative min-h-[90vh] sm:min-h-screen pt-24 pb-12 sm:pt-28 sm:pb-16 overflow-hidden bg-navy-950 flex flex-col justify-between">
       {/* 1. Deep Celestial Starry Night Background with Subtle Video Motion */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video
@@ -17,7 +17,7 @@ export default function Hero({ onOpenQuote }) {
           playsInline
           className="w-full h-full object-cover filter brightness-[0.7] contrast-[1.1] scale-105"
         >
-          <source src="/videos/solar-hero.mp4" type="video/mp4" />
+          <source src="./videos/solar-hero.mp4" type="video/mp4" />
         </video>
         {/* Dark night sky gradient overlay matching AuraSun aesthetic */}
         <div className="absolute inset-0 bg-gradient-to-b from-navy-950/80 via-navy-950/40 to-navy-950/90 pointer-events-none" />
@@ -27,14 +27,14 @@ export default function Hero({ onOpenQuote }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex-1 flex flex-col justify-between">
         
         {/* 2. Main Centered Headline: "Revolutionize Your Power" */}
-        <div className="text-center pt-2 sm:pt-4 mb-4">
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-light text-white tracking-tight inline-block relative">
+        <div className="text-center pt-2 sm:pt-4 mb-2 sm:mb-4 px-2">
+          <h1 className="text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-light text-white tracking-tight inline-block relative">
             <span className="text-slate-100">Revolutionize Your </span>
             <span className="relative font-normal text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-amber-200">
               Power
               {/* Golden Solar Swirl Arc above "Power" from reference */}
               <svg 
-                className="absolute -top-6 -right-8 sm:-top-8 sm:-right-12 w-10 sm:w-16 h-8 text-solar-gold" 
+                className="absolute -top-5 -right-5 sm:-top-8 sm:-right-12 w-8 sm:w-16 h-6 sm:h-8 text-solar-gold" 
                 viewBox="0 0 100 50" 
                 fill="none" 
                 stroke="currentColor" 
@@ -62,7 +62,7 @@ export default function Hero({ onOpenQuote }) {
             {/* Central Modern House with Rooftop Solar Panels & Live Energy Animation */}
             <div className="relative z-10 w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl border border-solar-gold/30 group">
               <motion.img
-                src="/images/hero-solar-house.jpg"
+                src="./images/hero-solar-house.jpg"
                 alt="Modern House with Rooftop Solar Power System"
                 animate={{
                   scale: [1, 1.07, 1],
@@ -157,6 +157,27 @@ export default function Hero({ onOpenQuote }) {
             </div>
 
           </div>
+        </div>
+
+        {/* Mobile Quick-Action CTA & Key Highlights (Visible on Mobile Only) */}
+        <div className="flex md:hidden flex-col gap-3 pt-2 pb-2">
+          <div className="grid grid-cols-2 gap-2.5 text-center">
+            <div className="glass-card rounded-xl p-2.5 border border-white/15">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-solar-gold block">25-Yr Warranty</span>
+              <span className="text-xs font-semibold text-white">Tier-1 Solar Panels</span>
+            </div>
+            <div className="glass-card rounded-xl p-2.5 border border-white/15">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-solar-gold block">Govt. Subsidy</span>
+              <span className="text-xs font-semibold text-white">Up to 90% Bill Cut</span>
+            </div>
+          </div>
+          <button
+            onClick={onOpenQuote}
+            className="w-full py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-navy-950 bg-gradient-to-r from-solar-gold to-amber-300 shadow-lg flex items-center justify-center gap-2"
+          >
+            <span>Get Free Solar Quote</span>
+            <ArrowUpRight className="w-4 h-4" />
+          </button>
         </div>
 
       </div>

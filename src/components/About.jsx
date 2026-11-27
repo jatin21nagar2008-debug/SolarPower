@@ -32,7 +32,7 @@ export default function About({ onOpenQuote }) {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-slate-100">
               <img
-                src="/images/solar-panels-sky.jpg"
+                src="./images/solar-panels-sky.jpg"
                 alt="High-efficiency rooftop solar panels"
                 className="w-full h-[380px] sm:h-[460px] object-cover"
               />

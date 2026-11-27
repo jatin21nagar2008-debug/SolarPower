@@ -11,13 +11,13 @@ export default function Navbar({ onOpenQuote }) {
     { name: 'About', href: '#about' },
     { name: 'Solar Panels', href: '#services' },
     { name: 'Energy Storage', href: '#solar-3d' },
-    { name: 'Technology', href: '#products' },
+    { name: 'Savings', href: '#calculator' },
     { name: 'Contact', href: '#contact' }
   ];
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'services', 'solar-3d', 'products', 'contact'];
+      const sections = ['hero', 'about', 'services', 'solar-3d', 'calculator', 'contact'];
       for (const section of sections) {
         const el = document.getElementById(section);
         if (el) {
@@ -85,7 +85,7 @@ export default function Navbar({ onOpenQuote }) {
                   GET STARTED
                 </span>
                 <span className="text-[9px] text-navy-900 font-semibold block">
-                  $12,000 - $29 price
+                  Free Site Survey
                 </span>
               </div>
               <div className="w-6 h-6 rounded-lg bg-navy-950/15 flex items-center justify-center group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">
@@ -130,7 +130,7 @@ export default function Navbar({ onOpenQuote }) {
               }}
               className="w-full py-3 rounded-xl font-bold text-xs uppercase tracking-wider text-navy-950 bg-gradient-to-r from-solar-gold to-amber-300 shadow-lg"
             >
-              Get Started ($12,000 - $29 price) ↗
+              Get Started (Free Site Survey) ↗
             </button>
           </div>
         </div>

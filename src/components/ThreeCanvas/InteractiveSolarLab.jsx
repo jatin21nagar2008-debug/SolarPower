@@ -61,7 +61,7 @@ export default function InteractiveSolarLab({ onOpenQuote }) {
                 playsInline
                 className="w-full h-full object-cover"
               >
-                <source src="/videos/solar-3d-lab.mp4" type="video/mp4" />
+                <source src="./videos/solar-3d-lab.mp4" type="video/mp4" />
               </video>
 
               {/* Clean Floating Play/Pause Control */}

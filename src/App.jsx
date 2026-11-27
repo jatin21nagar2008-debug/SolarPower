@@ -49,7 +49,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 relative selection:bg-emerald-600 selection:text-white font-sans">
+    <div className="min-h-screen bg-white text-slate-900 relative selection:bg-emerald-600 selection:text-white font-sans overflow-x-hidden pb-16 sm:pb-0">
       {/* Sticky Navigation Bar (Kept Intact) */}
       <Navbar onOpenQuote={handleOpenQuote} />
 
@@ -104,8 +104,8 @@ export default function App() {
         onOpenQuote={handleOpenQuote}
       />
 
-      {/* Floating Quick Lead Buttons */}
-      <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3">
+      {/* Floating Quick Lead Buttons (Desktop / Tablet) */}
+      <div className="hidden sm:flex fixed bottom-6 right-6 z-40 flex-col items-end gap-3">
         {showScrollTop && (
           <button
             onClick={scrollToTop}
@@ -126,7 +126,31 @@ export default function App() {
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white" />
           </span>
           <MessageCircle className="w-4 h-4 fill-white" />
-          <span className="hidden sm:inline font-bold tracking-wide">WhatsApp Free Quote</span>
+          <span className="font-bold tracking-wide">WhatsApp Free Quote</span>
+        </button>
+      </div>
+
+      {/* Sticky Mobile Bottom Lead Bar (Mobile Only) */}
+      <div className="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2.5 flex items-center gap-2 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+        <a
+          href={`tel:${COMPANY_INFO.phoneRaw}`}
+          className="flex-1 py-2.5 rounded-xl bg-slate-100 text-slate-800 font-bold text-xs flex items-center justify-center gap-1.5"
+        >
+          <Phone className="w-3.5 h-3.5 text-emerald-600" />
+          <span>Call</span>
+        </a>
+        <button
+          onClick={handleWhatsAppClick}
+          className="flex-1 py-2.5 rounded-xl bg-emerald-600 text-white font-bold text-xs flex items-center justify-center gap-1.5"
+        >
+          <MessageCircle className="w-3.5 h-3.5 fill-white" />
+          <span>WhatsApp</span>
+        </button>
+        <button
+          onClick={handleOpenQuote}
+          className="flex-[1.3] py-2.5 rounded-xl bg-amber-400 text-slate-950 font-extrabold text-xs flex items-center justify-center"
+        >
+          Free Quote
         </button>
       </div>
     </div>
